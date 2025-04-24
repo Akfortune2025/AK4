@@ -169,10 +169,4 @@ img {
   .hero p {
     font-size: 1rem;
   }
-.project-image {
-  width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
 }
