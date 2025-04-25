@@ -55,7 +55,7 @@ img {
 
 .logo img {
   height: 300px;
-  width: auto;
+  width: 300px;
   object-fit: contain;
   vertical-align: middle;
 }
