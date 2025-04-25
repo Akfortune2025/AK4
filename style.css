@@ -42,8 +42,8 @@ a {
 
 /* Logo */
 .logo img {
-  height: 300px;
-  width: auto;
+  height: 500px;
+  width:500px;
   display: block;
   object-fit: contain;
 }
