@@ -1,366 +1,391 @@
-<!DOCTYPE html>  <html lang="en">  
-<head>  
-  <meta charset="UTF-8" />  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
-  <title>AK Fortune Properties LLP</title>  
-  <style>  
-    * {  
-      margin: 0;  
-      padding: 0;  
-      box-sizing: border-box;  
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    }  body {  
-  background-color: #0f0f0f;  
-  color: #ffffff;  
-  line-height: 1.6;  
-}  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AK Fortune Properties LLP</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-a {  
-  color: inherit;  
-  text-decoration: none;  
-}  
+    body {
+      background-color: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-.container {  
-  width: 90%;  
-  max-width: 1100px;  
-  margin: auto;  
-}  
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.site-header {  
-  background-color: #0f0f0f;  
-  padding: 20px 0;  
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);  
-  position: sticky;  
-  top: 0;  
-  z-index: 1000;  
-}  
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.site-header .container {  
-  display: flex;  
-  justify-content: space-between;  
-  align-items: center;  
-}  
+    .site-header {
+      background-color: #0f0f0f;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.logo img {  
-  height: 50px;  
-}  
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-.nav-links {  
-  list-style: none;  
-  display: flex;  
-  gap: 25px;  
-}  
+    .logo img {
+      height: 50px;
+    }
 
-.nav-links li a {  
-  color: #ddd;  
-  font-weight: 500;  
-}  
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
 
-.nav-links li a:hover {  
-  color: #f7c35f;  
-}  
+    .nav-links li a {
+      color: #ddd;
+      font-weight: 500;
+    }
 
-.hero {  
-  height: 100vh;  
-  background: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d') no-repeat center center/cover;  
-  position: relative;  
-  display: flex;  
-  align-items: center;  
-  justify-content: center;  
-  text-align: center;  
-}  
+    .nav-links li a:hover {
+      color: #f7c35f;
+    }
 
-.overlay {  
-  position: absolute;  
-  inset: 0;  
-  background: rgba(0, 0, 0, 0.7);  
-  z-index: 1;  
-}  
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-.hero-content {  
-  position: relative;  
-  z-index: 2;  
-  max-width: 800px;  
-  padding: 20px;  
-}  
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+    }
 
-.hero h1 {  
-  font-size: 3rem;  
-  margin-bottom: 1rem;  
-  color: #f7c35f;  
-}  
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 20px;
+    }
 
-.hero p {  
-  font-size: 1.2rem;  
-  margin-bottom: 2rem;  
-  color: #ccc;  
-}  
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #f7c35f;
+    }
 
-.cta-buttons {  
-  display: flex;  
-  gap: 20px;  
-  justify-content: center;  
-  flex-wrap: wrap;  
-}  
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
 
-.cta-buttons a {  
-  padding: 12px 24px;  
-  border-radius: 8px;  
-  font-weight: bold;  
-}  
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-.cta-primary {  
-  background-color: #f7c35f;  
-  color: #000;  
-}  
+    .cta-buttons a {
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
 
-.cta-primary:hover {  
-  background-color: #e6af33;  
-}  
+    .cta-primary {
+      background-color: #f7c35f;
+      color: #000;
+    }
 
-.cta-secondary {  
-  border: 2px solid #f7c35f;  
-  color: #f7c35f;  
-}  
+    .cta-primary:hover {
+      background-color: #e6af33;
+    }
 
-.cta-secondary:hover {  
-  background-color: #f7c35f;  
-  color: #000;  
-}  
+    .cta-secondary {
+      border: 2px solid #f7c35f;
+      color: #f7c35f;
+    }
 
-section {  
-  padding: 60px 0;  
-}  
+    .cta-secondary:hover {
+      background-color: #f7c35f;
+      color: #000;
+    }
 
-h2 {  
-  text-align: center;  
-  margin-bottom: 20px;  
-  color: #f7c35f;  
-}  
+    section {
+      padding: 60px 0;
+    }
 
-.tagline,  
-.subheading,  
-.section-subtitle {  
-  text-align: center;  
-  color: #ccc;  
-  margin-bottom: 30px;  
-}  
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #f7c35f;
+    }
 
-.features-grid,  
-.projects-grid,  
-.gallery-grid,  
-.testimonials-grid {  
-  display: grid;  
-  gap: 30px;  
-}  
+    .tagline,
+    .subheading,
+    .section-subtitle {
+      text-align: center;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
 
-.feature-card,  
-.project-card,  
-.testimonial-card {  
-  background: #1a1a1a;  
-  padding: 20px;  
-  border-radius: 10px;  
-}  
+    .features-grid,
+    .projects-grid,
+    .gallery-grid,
+    .testimonials-grid {
+      display: grid;
+      gap: 30px;
+    }
 
-.project-card img,  
-.gallery-item img {  
-  border-radius: 10px;  
-}  
+    .feature-card,
+    .project-card,
+    .testimonial-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-.btn {  
-  background: #f7c35f;  
-  color: #000;  
-  padding: 10px 20px;  
-  display: inline-block;  
-  border-radius: 6px;  
-  margin-top: 10px;  
-}  
+    .project-card img,
+    .gallery-item img {
+      border-radius: 10px;
+      width: 100%;
+    }
 
-.contact-form .form-group {  
-  margin-bottom: 15px;  
-}  
+    .btn {
+      background: #f7c35f;
+      color: #000;
+      padding: 10px 20px;
+      display: inline-block;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
 
-.contact-form input {  
-  width: 100%;  
-  padding: 12px;  
-  border: none;  
-  border-radius: 8px;  
-  background: #222;  
-  color: #fff;  
-}  
+    .contact-form .form-group {
+      margin-bottom: 15px;
+    }
 
-.site-footer {  
-  background: #111;  
-  color: #ccc;  
-  padding: 40px 0;  
-}  
+    .contact-form input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+    }
 
-.footer-top {  
-  display: flex;  
-  justify-content: space-between;  
-  flex-wrap: wrap;  
-}  
+    .site-footer {
+      background: #111;
+      color: #ccc;
+      padding: 40px 0;
+    }
 
-.footer-links ul {  
-  list-style: none;  
-  padding: 0;  
-}  
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
 
-.footer-links li {  
-  margin-bottom: 10px;  
-}  
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
 
-.floating-buttons {  
-  position: fixed;  
-  bottom: 20px;  
-  right: 20px;  
-  display: flex;  
-  gap: 10px;  
-  z-index: 1000;  
-}  
+    .footer-links li {
+      margin-bottom: 10px;
+    }
 
-.floating-buttons img {  
-  width: 40px;  
-  height: 40px;  
-}  
+    .floating-buttons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      z-index: 1000;
+    }
 
-@media (max-width: 768px) {  
-  .nav-links {  
-    flex-direction: column;  
-    background: #1a1a1a;  
-    position: absolute;  
-    right: 10px;  
-    top: 70px;  
-    display: none;  
-    padding: 20px;  
-    border-radius: 10px;  
-  }  
+    .floating-buttons img {
+      width: 40px;
+      height: 40px;
+    }
 
-  .nav-links.active {  
-    display: flex;  
-  }  
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        background: #1a1a1a;
+        position: absolute;
+        right: 10px;
+        top: 70px;
+        display: none;
+        padding: 20px;
+        border-radius: 10px;
+      }
 
-  .footer-top {  
-    flex-direction: column;  
-    gap: 20px;  
-  }  
+      .nav-links.active {
+        display: flex;
+      }
 
-  .hero h1 {  
-    font-size: 2rem;  
-  }  
-}
+      .footer-top {
+        flex-direction: column;
+        gap: 20px;
+      }
 
-  </style>  
-</head>  
-<body>  <header class="site-header">  
-  <div class="container">  
-    <div class="logo">  
-      <a href="#hero"><img src="https://via.placeholder.com/150x50?text=AK+Logo" alt="AK Fortune Logo" /></a>  
-    </div>  
-    <ul class="nav-links">  
-      <li><a href="#hero">Home</a></li>  
-      <li><a href="#about">About</a></li>  
-      <li><a href="#projects">Projects</a></li>  
-      <li><a href="#gallery">Gallery</a></li>  
-      <li><a href="#testimonials">Testimonials</a></li>  
-      <li><a href="#contact">Contact</a></li>  
-    </ul>  
-  </div>  
-</header>  <section class="hero" id="hero">  
-  <div class="overlay"></div>  
-  <div class="hero-content">  
-    <h1>Unlock Your Dream Plot</h1>  
-    <p>Premium, DTCP-approved plots with 100% transparency and expert support.</p>  
-    <div class="cta-buttons">  
-      <a href="#contact" class="cta-primary">Book a Free Site Visit</a>  
-      <a href="#projects" class="cta-secondary">Explore Plots</a>  
-    </div>  
-  </div>  
-</section>  <section class="about-section" id="about">  
-  <div class="container">  
-    <h2>About AK Fortune Properties LLP</h2>  
-    <p class="tagline">Real Estate You Can Trust</p>  
-    <p>At AK Fortune Properties LLP, we specialize in DTCP-approved residential plots across prime locations. From site visits to legal guidance and EMI options, we make real estate simple and secure for everyone.</p>  
-  </div>  
-</section>  <section class="featured-projects" id="projects">  
-  <div class="container">  
-    <h2>Featured Projects</h2>  
-    <p class="section-subtitle">Explore our top-selling layouts</p>  
-    <div class="projects-grid">  
-      <div class="project-card">  
-        <img src="https://images.unsplash.com/photo-1588854337110-1ff9eb3d5c2b" alt="Project 1" />  
-        <h3>Green Valley Layout</h3>  
-        <p>Located near NH-44, this layout offers 30+ DTCP approved plots with park access.</p>  
-        <a href="#" class="btn">View Details</a>  
-      </div>  
-      <div class="project-card">  
-        <img src="https://images.unsplash.com/photo-1612770527068-e59f5cf5d2fc?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Green Valley Layout" class="project-image" />  
-        <h3>Lakeview Heights</h3>  
-        <p>A peaceful gated community with clear title and well-planned roads.</p>  
-        <a href="#" class="btn">View Details</a>  
-      </div>  
-    </div>  
-  </div>  
-</section>  <section class="testimonials-section" id="testimonials">  
-  <div class="container">  
-    <h2>Customer Testimonials</h2>  
-    <p class="subheading">What our clients say</p>  
-    <div class="testimonials-grid">  
-      <div class="testimonial-card">  
-        <p>“AK Fortune helped me find the perfect plot for my dream home. Transparent and highly professional team!”</p>  
-        <h4>— Hema</h4>  
-      </div>  
-      <div class="testimonial-card">  
-        <p>“Easy EMI plans and trustworthy service. Highly recommend!”</p>  
-        <h4>— Ramesh</h4>  
-      </div>  
-    </div>  
-  </div>  
-</section>  <section class="gallery-section" id="gallery">  
-  <div class="container">  
-    <h2>Gallery</h2>  
-    <p class="subheading">See our premium projects</p>  
-    <div class="gallery-grid">  
-      <div class="gallery-item"><img src="https://source.unsplash.com/400x300/?real-estate,1" alt="Gallery 1" /></div>  
-      <div class="gallery-item"><img src="https://source.unsplash.com/400x300/?real-estate,2" alt="Gallery 2" /></div>  
-    </div>  
-  </div>  
-</section>  <section class="contact-section" id="contact">  
-  <div class="container">  
-    <h2>Contact Us</h2>  
-    <p class="subheading">Book a free site visit</p>  
-    <form class="contact-form">  
-      <div class="form-group"><input type="text" placeholder="Your Name" required /></div>  
-      <div class="form-group"><input type="email" placeholder="Your Email" required /></div>  
-      <div class="form-group"><input type="tel" placeholder="Your Phone" required /></div>  
-      <button type="submit" class="btn">Submit</button>  
-    </form>  
-  </div>  
-</section>  <footer class="site-footer">  
-  <div class="container footer-top">  
-    <div>  
-      <h3>AK Fortune Properties LLP</h3>  
-      <p>Building trust, one plot at a time.</p>  
-    </div>  
-    <div class="footer-links">  
-      <h4>Quick Links</h4>  
-      <ul>  
-        <li><a href="#hero">Home</a></li>  
-        <li><a href="#about">About</a></li>  
-        <li><a href="#projects">Projects</a></li>  
-        <li><a href="#gallery">Gallery</a></li>  
-        <li><a href="#contact">Contact</a></li>  
-      </ul>  
-    </div>  
-    <div>  
-      <h4>Contact</h4>  
-      <p>📍 4th floor, Azeez Center, Anna Salai, Chennai</p>  
-      <p>📞 9884440506</p>  
-    </div>  
-  </div>  
-  <div class="floating-buttons">  
-    <a href="https://wa.me/919876543210" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" /></a>  
-    <a href="tel:+919876543210"><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" /></a>  
-  </div>  
-</footer>  </body>  
-</html> 
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <a href="#hero"><img src="https://via.placeholder.com/150x50?text=AK+Logo" alt="AK Fortune Logo" /></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero" id="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Unlock Your Dream Plot</h1>
+    <p>Premium, DTCP-approved plots with 100% transparency and expert support.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="cta-primary">Book a Free Site Visit</a>
+      <a href="#projects" class="cta-secondary">Explore Plots</a>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="container">
+    <h2>About AK Fortune Properties LLP</h2>
+    <p class="tagline">Real Estate You Can Trust</p>
+    <p>At AK Fortune Properties LLP, we specialize in DTCP-approved residential plots across prime locations. From site visits to legal guidance and EMI options, we make real estate simple and secure for everyone.</p>
+  </div>
+</section>
+
+<section class="featured-projects" id="projects">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <p class="section-subtitle">Explore our top-selling layouts</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1588854337110-1ff9eb3d5c2b" alt="Project 1" />
+        <h3>Green Valley Layout</h3>
+        <p>Located near NH-44, this layout offers 30+ DTCP approved plots with park access.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1612770527068-e59f5cf5d2fc" alt="Lakeview Heights" />
+        <h3>Lakeview Heights</h3>
+        <p>A peaceful gated community with clear title and well-planned roads.</p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section" id="testimonials">
+  <div class="container">
+    <h2>Customer Testimonials</h2>
+    <p class="subheading">What our clients say</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>“AK Fortune helped me find the perfect plot for my dream home. Transparent and highly professional team!”</p>
+        <h4>— Hema</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>“Easy EMI plans and trustworthy service. Highly recommend!”</p>
+        <h4>— Ramesh</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+    <p class="subheading">See our premium projects</p>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="https://source.unsplash.com/200x150/?real-estate,1" alt="Gallery 1" /></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/200x150/?real-estate,2" alt="Gallery 2" /></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/200x150/?real-estate,3" alt="Gallery 3" /></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/200x150/?real-estate,4" alt="Gallery 4" /></div>
+      <div class="gallery-item"><img src="https://source.unsplash.com/200x150/?real-estate,5" alt="Gallery 5" /></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="subheading">Book a free site visit</p>
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <div class="form-group"><input type="text" name="name" placeholder="Your Name" required /></div>
+      <div class="form-group"><input type="email" name="email" placeholder="Your Email" required /></div>
+      <div class="form-group"><input type="tel" name="phone" placeholder="Your Phone" required /></div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div>
+      <h3>AK Fortune Properties LLP</h3>
+      <p>Building trust, one plot at a time.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>📍 4th floor, Azeez Center, Anna Salai, Chennai</p>
+      <p>📞 9884440506</p>
+      <p>📧 helloakfortune@gmail.com</p>
+    </div>
+  </div>
+  <div class="floating-buttons">
+    <a href="https://wa.me/919884440506" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" /></a>
+    <a href="tel:+919884440506"><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" /></a>
+  </div>
+</footer>
+
+</body>
+</html>
