@@ -155,15 +155,12 @@
       color: #f7c35f;
     }
 
-    .tagline,
-    .subheading,
     .section-subtitle {
       text-align: center;
       color: #ccc;
       margin-bottom: 30px;
     }
 
-    .features-grid,
     .projects-grid,
     .gallery-grid,
     .testimonials-grid {
@@ -171,7 +168,6 @@
       gap: 30px;
     }
 
-    .feature-card,
     .project-card,
     .testimonial-card {
       background: #1a1a1a;
@@ -194,38 +190,22 @@
       margin-top: 10px;
     }
 
-    .contact-form .form-group {
-      margin-bottom: 15px;
-    }
-
-    .contact-form input {
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 12px;
       border: none;
       border-radius: 8px;
       background: #222;
       color: #fff;
+      margin-bottom: 15px;
     }
 
     .site-footer {
       background: #111;
       color: #ccc;
       padding: 40px 0;
-    }
-
-    .footer-top {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-links li {
-      margin-bottom: 10px;
+      text-align: center;
     }
 
     .floating-buttons {
@@ -262,11 +242,6 @@
         display: flex;
       }
 
-      .footer-top {
-        flex-direction: column;
-        gap: 20px;
-      }
-
       .hero h1 {
         font-size: 2rem;
       }
@@ -280,7 +255,7 @@
     <div class="logo">
       <a href="#hero">
         <img src="logo.png" alt="AK Fortune Logo" />
-    </a>
+      </a>
     </div>
     <div class="menu-toggle" onclick="toggleMenu()">
       <span></span><span></span><span></span>
@@ -308,19 +283,84 @@
   </div>
 </section>
 
-<!-- Keep rest of your sections same -->
-<!-- About, Projects, Testimonials, Gallery, Contact, Footer -->
+<section id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p class="section-subtitle">We are a leading plot promotion company committed to offering legally approved plots with transparency, guidance, and trust.</p>
+  </div>
+</section>
 
-<!-- Floating Buttons and Footer -->
+<section id="projects">
+  <div class="container">
+    <h2>Our Projects</h2>
+    <p class="section-subtitle">Explore our latest DTCP-approved plots available for sale.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project Image">
+        <h3>Project Name</h3>
+        <p>Location details and highlights.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+    <p class="section-subtitle">Take a visual tour of our developed layouts and customer visits.</p>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x200" alt="Gallery Image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <p class="section-subtitle">Our satisfied customers share their experience.</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Very professional team. Got my dream plot easily!"</p>
+        <strong>- Happy Buyer</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p class="section-subtitle">Reach out to us for site visits, bookings, or any queries.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2025 AK Fortune Properties LLP. All rights reserved.</p>
+  </div>
+</footer>
+
 <div class="floating-buttons">
-  <a href="https://wa.me/919884440506" target="_blank"><img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" /></a>
-  <a href="tel:+919884440506"><img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" /></a>
+  <a href="https://wa.me/919884440506" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+  </a>
+  <a href="tel:+919884440506">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone" />
+  </a>
 </div>
 
 <script>
   function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('active');
   }
 </script>
 
